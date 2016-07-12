@@ -5,7 +5,6 @@ var GraphQL = require('graphql');
 var MovieSchema = require('./models/MovieSchema.js');
 var path = require('path');
 
-
 var app = express();
 
 mongoose.set('debug', true);
@@ -15,12 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text({type: 'application/graphql'}));
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-// app.use(graffiti.express(
-// //  {schema: gqlSchema}
-//     {schema: graphSchema}
-// ));
 
 app.post('/',function(req,res) {
   GraphQL.graphql(MovieSchema,req.body).then(function(result) {
