@@ -4,6 +4,7 @@
   "description": "GraphQL API Implementation",
   "main": "index.js",
   "scripts": {
+    "start": "node --harmony_destructuring index.js",
     "test": "mocha"
   },
   "repository": {
