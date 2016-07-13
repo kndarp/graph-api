@@ -1,0 +1,27 @@
+{
+  "name": "graph-api",
+  "description": "GraphQL API Implementation",
+  "main": "index.js",
+  "authors": [
+    "Kndarp Patel"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "graph",
+    "api",
+    "graphql",
+    "mongoose"
+  ],
+  "homepage": "https://github.com/kndarp/graph-api",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.2.1",
+    "babel": "*"
+  }
+}
