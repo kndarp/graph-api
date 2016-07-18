@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text({type: 'application/graphql'}));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'ui/dist')));
 
 app.post('/',function(req,res) {
   GraphQL.graphql(MovieSchema,req.body).then(function(result) {

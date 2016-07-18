@@ -24,13 +24,29 @@
   },
   "homepage": "https://github.com/kndarp/graph-api#readme",
   "dependencies": {
+    "babel-relay-plugin": "^0.9.2",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "graphql": "^0.6.1",
-    "mongoose": "^4.5.3"
+    "mongoose": "^4.5.3",
+    "react": "^15.2.1",
+    "react-relay": "^0.9.2",
+    "react-router": "^2.5.2"
   },
   "devDependencies": {
+    "browserify": "*",
     "chai": "^3.5.0",
-    "supertest": "^1.2.0"
+    "flux": "*",
+    "gulp": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.0",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^1.5.3",
+    "object-assign": "*",
+    "react-dom": "^15.2.1",
+    "reactify": "*",
+    "supertest": "^1.2.0",
+    "vinyl-source-stream": "*",
+    "webpack-dev-server": "^1.14.1"
   }
 }
